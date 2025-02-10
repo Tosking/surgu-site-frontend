@@ -3,19 +3,36 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-primary: var(--font-avenir-next);
+  --font-secondary: var(--font-open-sans);
+
+  /* Основные фирменные цвета */
+  --sur-primary-blue: #1143c0; /* RGB 17 67 192 */
+  --sur-primary-green: #0d9739; /* RGB 13 151 57 */
+
+  /* Дополнительные цвета */
+  --sur-accent-teal: #34c7b7; /* RGB 52 199 183 */
+  --sur-accent-purple: #784cc3; /* RGB 120 76 195 */
+  --sur-accent-yellow: #f5c64c; /* RGB 245 198 76 */
+  --sur-accent-pink: #e0467e; /* RGB 224 70 126 */
+  --sur-accent-red: #ff0000; /* RGB 255 0 0 */
+  --sur-accent-sky: #9abcf9; /* RGB 154 188 249 */
+  --sur-accent-orange: #ea7a57; /* RGB 234 122 87 */
+  --sur-black: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    /* Для тёмной темы можно адаптировать цвета (пример): */
+    --sur-primary-blue: #2a5fd6;
+    --sur-primary-green: #1aa84a;
   }
 }
 
 body {
+  font-family: var(--font-secondary);
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
