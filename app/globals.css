@@ -5,6 +5,7 @@
 :root {
   --font-primary: var(--font-avenir-next);
   --font-secondary: var(--font-open-sans);
+  --font-third: var(--font-montserrat);
 
   /* Основные фирменные цвета */
   --sur-primary-blue: #1143c0; /* RGB 17 67 192 */

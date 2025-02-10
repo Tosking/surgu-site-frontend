@@ -30,6 +30,7 @@ export default {
       fontFamily: {
         primary: ["var(--font-avenir-next)", "sans-serif"], // Avenir Next
         secondary: ["var(--font-open-sans)", "sans-serif"], // Open Sans
+        third: ["var(--font-montserrat)", "sans-serif"], // Montserrat
       },
     },
   },
