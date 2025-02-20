@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Open_Sans, Montserrat } from "next/font/google"; // Импортируем Google Font
+import { Open_Sans, Montserrat } from "next/font/google";
 import "./globals.css";
 
 const avenirNext = localFont({
@@ -29,8 +29,8 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 export const metadata: Metadata = {
-  title: "СурГУ",
-  description: "СурГУ: Сургутский государственный университет",
+  title: "СурГУ: Сургутский государственный университет",
+  description: "Сургутский государственный университет: СурГУ",
 };
 
 export default function RootLayout({

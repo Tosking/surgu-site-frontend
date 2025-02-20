@@ -2,8 +2,6 @@
 
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
-// import { GLTFLoader } from "three-stdlib/loaders/GLTFLoader";
-// import { OrbitControls } from "three-stdlib/controls/OrbitControls";
 import { OrbitControls } from "three-stdlib";
 import { GLTFLoader } from "three-stdlib";
 const ThreeScene = () => {
@@ -80,16 +78,20 @@ const ThreeScene = () => {
       window.removeEventListener("resize", handleResize);
       mountRef.current.removeChild(renderer.domElement);
       scene.traverse((child) => {
-        if (child.isMesh) {
+        if (child instanceof THREE.Mesh) {
           child.geometry.dispose();
-          child.material.dispose();
+          if (Array.isArray(child.material)) {
+            child.material.forEach((material) => material.dispose());
+          } else {
+            child.material.dispose();
+          }
         }
       });
       renderer.dispose();
     };
   }, []);
 
-  return <div ref={mountRef} style={{ width: "100%", height: "700px" }} />;
+  return <div ref={mountRef} style={{ width: "900px", height: "700px" }} />;
 };
 
 export default ThreeScene;
