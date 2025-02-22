@@ -37,3 +37,58 @@ body {
   color: var(--foreground);
   background: var(--background);
 }
+.carousel-container {
+  padding: 40px 0;
+}
+
+.slick-slide {
+  padding: 0 10px;
+}
+
+.company-logo {
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.company-logo:hover {
+  transform: scale(1.05);
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+}
+
+.slick-prev {
+  position: absolute !important;
+  width: 45px !important;
+  height: 45px !important;
+  border-radius: 50% !important;
+  left: 20px !important;
+  bottom: 0;
+  top: 170px !important;
+  z-index: 50 !important;
+  cursor: pointer !important;
+}
+.slick-disabled {
+  border: 1px solid #7c7f85 !important;
+  opacity: 1 !important;
+}
+.slick-next {
+  position: absolute !important;
+  width: 45px !important;
+  height: 45px !important;
+  border-radius: 50% !important;
+  right: 20 !important;
+  top: 170px !important;
+  z-index: 50 !important;
+  cursor: pointer !important;
+}
+.slick-next::before {
+  content: "" !important;
+}
+.slick-prev::before {
+  content: "" !important;
+}
