@@ -43,7 +43,9 @@ export default function RootLayout({
       <body
         className={`${avenirNext.variable} ${openSans.variable} ${montserrat.variable} antialiased`}
       >
-        {children}
+        <div className="wrapper flex flex-col w-full overflow-hidden">
+          {children}
+        </div>
       </body>
     </html>
   );

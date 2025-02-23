@@ -3,10 +3,14 @@ import type { Config } from "tailwindcss";
 export default {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+
   theme: {
+    containers: {
+      center: true,
+    },
     extend: {
       colors: {
         // Основные цвета
@@ -26,6 +30,10 @@ export default {
         "sur-accent-sky": "var(--sur-accent-sky)",
         "sur-accent-orange": "var(--sur-accent-orange)",
         "sur-black": "var(--sur-black)",
+        "sur-header-section--white": "var(--sur-header-section--white)",
+        "sur-header-section--black": "var(--sur-header-section--black)",
+        "sur-sections-dark": "var(--sur-sections-dark)",
+        "sur-section-white": "var(--sur-section-white)",
       },
       fontFamily: {
         primary: ["var(--font-avenir-next)", "sans-serif"], // Avenir Next
