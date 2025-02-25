@@ -24,6 +24,7 @@
   --sur-header-section--black: #323030;
   --sur-sections-dark: #27272c;
   --sur-section-white: #f2f6ff;
+  --sur-footer-dark: #292a2d;
 }
 
 @media (prefers-color-scheme: dark) {

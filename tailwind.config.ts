@@ -34,6 +34,7 @@ export default {
         "sur-header-section--black": "var(--sur-header-section--black)",
         "sur-sections-dark": "var(--sur-sections-dark)",
         "sur-section-white": "var(--sur-section-white)",
+        "sur-footer-dark": "var(--sur-footer-dark)",
       },
       fontFamily: {
         primary: ["var(--font-avenir-next)", "sans-serif"], // Avenir Next
