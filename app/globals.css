@@ -1,7 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@layer components {
+  .sur-su-bg-polytech {
+    background: linear-gradient(278.7deg, #ffa616 2.7%, #f70707 77.5%);
+  }
+  .sur-su-bg-sec-medic {
+    background: linear-gradient(278.7deg, #85b3f8 2.7%, #11ead8 77.5%);
+  }
+  .sur-su-bg-human {
+    background: linear-gradient(278.7deg, #f75ab0 2.7%, #9c40ff 59.02%);
+  }
+  .sur-su-bg-natural-tech {
+    background: linear-gradient(278.7deg, #873807 2.7%, #f75009 77.5%);
+  }
+  .sur-su-bg-medic {
+    background: linear-gradient(278.7deg, #f9ed72 2.7%, #1c830f 77.5%);
+  }
+  .sur-su-bg-state-law {
+    background: linear-gradient(278.7deg, #40bad6 2.7%, #123da9 96.46%);
+  }
+  .sur-su-bg-economic {
+    background: linear-gradient(278.7deg, #ffbe68 2.7%, #f0d019 77.5%);
+  }
+}
 :root {
   --font-primary: var(--font-avenir-next);
   --font-secondary: var(--font-open-sans);
@@ -25,11 +47,12 @@
   --sur-sections-dark: #27272c;
   --sur-section-white: #f2f6ff;
   --sur-footer-dark: #292a2d;
+  --background: #f2f6ff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #f2f6ff;
     --foreground: #ededed;
     /* Для тёмной темы можно адаптировать цвета (пример): */
     --sur-primary-blue: #2a5fd6;
@@ -38,15 +61,22 @@
 }
 
 body {
-  font-family: var(--font-third);
+  font-family: "Montserrat", "Montserrat Fallback";
   color: var(--foreground);
   font-size: 18px;
   background: var(--background);
+  line-height: normal;
 }
 .carousel-container {
   padding: 40px 0;
 }
-
+.sur-su-border-linear {
+  background: linear-gradient(#fff8fb, #fff8fb) padding-box,
+    linear-gradient(to right, #1447ff, #15d315) border-box;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  font-style: italic;
+}
 .slick-slide {
   padding: 0 10px;
 }
