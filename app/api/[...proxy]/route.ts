@@ -1,3 +1,4 @@
+// @ts-ignore
 import type { NextRequest } from "next/server";
 
 const apiServer = "http://localhost:3001/";

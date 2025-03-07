@@ -12,7 +12,7 @@ import BlindIcon from "@/public/blind.svg";
 
 const Header = () => {
   return (
-    <SemanticHeader className="bg-white">
+    <SemanticHeader className="w-full bg-white">
       <Container>
         <div className="flex items-center justify-between ">
           <Image src={Logo} alt="logo" />
