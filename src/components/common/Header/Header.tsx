@@ -9,7 +9,7 @@ import Button from "../../ui/Button/Button";
 import SearchIcon from "@/public/search.svg";
 import EnglishIcon from "@/public/english.svg";
 import BlindIcon from "@/public/blind.svg";
-
+import HeaderMap from "@/public/headermap.png";
 const Header = () => {
   return (
     <SemanticHeader className="w-full bg-white">
@@ -22,13 +22,28 @@ const Header = () => {
                 <li>
                   <ul className="flex gap-[30px]">
                     <li>
-                      <Link href={"/abiturient"}>Абитуриенту</Link>
+                      <Link
+                        className="hover:text-sur-primary-blue ease-out duration-300"
+                        href={"/abiturient"}
+                      >
+                        Абитуриенту
+                      </Link>
                     </li>
                     <li>
-                      <Link href={"/student"}>Студенту</Link>
+                      <Link
+                        className="hover:text-sur-primary-blue ease-out duration-300"
+                        href={"/student"}
+                      >
+                        Студенту
+                      </Link>
                     </li>
                     <li>
-                      <Link href={"/employee"}>Сотруднику</Link>
+                      <Link
+                        className="hover:text-sur-primary-blue ease-out duration-300"
+                        href={"/employee"}
+                      >
+                        Сотруднику
+                      </Link>
                     </li>
                   </ul>
                 </li>
@@ -62,26 +77,48 @@ const Header = () => {
             <Nav className="flex gap-[16px] text-black py-[16px]">
               <ul className="flex items-center gap-[40px]">
                 <li>
-                  <Link href={"/abiturient"}>Об университете</Link>
+                  <Link
+                    className="hover:text-sur-primary-blue ease-out duration-300"
+                    href={"/abiturient"}
+                  >
+                    Об университете
+                  </Link>
                 </li>
                 <li>
-                  <Link href={"/student"}>Наука</Link>
+                  <Link
+                    className="hover:text-sur-primary-blue ease-out duration-300"
+                    href={"/student"}
+                  >
+                    Наука
+                  </Link>
                 </li>
                 <li>
-                  <Link href={"/employee"}>Образование</Link>
+                  <Link
+                    className="hover:text-sur-primary-blue ease-out duration-300"
+                    href={"/employee"}
+                  >
+                    Образование
+                  </Link>
                 </li>
                 <li>
-                  <Link href={"/employee"}>Оплата услуг</Link>
+                  <Link
+                    className="hover:text-sur-primary-blue ease-out duration-300"
+                    href={"/employee"}
+                  >
+                    Оплата услуг
+                  </Link>
                 </li>
                 <li>
-                  <Link href={"/employee"}>Контакты</Link>
+                  <Link
+                    className="hover:text-sur-primary-blue ease-out duration-300"
+                    href={"/contacts"}
+                  >
+                    Контакты
+                  </Link>
                 </li>
               </ul>
-              <Link
-                className="sur-su-border-linear py-[7.5px] px-[16px]"
-                href="/map"
-              >
-                Карта сайта
+              <Link href="/map">
+                <Image src={HeaderMap} alt="map" />
               </Link>
             </Nav>
           </div>

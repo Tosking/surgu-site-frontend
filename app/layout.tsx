@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.variable} antialiased`}>
-        <div className="wrapper flex flex-col w-full overflow-hidden">
+        <div className="wrapper flex flex-col justify-between min-h-dvh w-full overflow-hidden">
           {children}
         </div>
       </body>

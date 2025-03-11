@@ -4,7 +4,7 @@ import Footer from "@/src/components/semantic/Footer";
 import Link from "next/link";
 import Vkontakte from "../public/Vkontakte.svg";
 import Telegram from "../public/Telegram.svg";
-import Rutube from "../public/Rutube.svg";
+import Rutube from "@/public/Rutube.svg";
 import Image from "next/image";
 import Section from "@/src/components/semantic/Section";
 import Header from "@/src/components/common/Header/Header";
