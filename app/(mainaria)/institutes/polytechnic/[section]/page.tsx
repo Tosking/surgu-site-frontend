@@ -12,6 +12,13 @@ const DynamicComponents = {
       loading: () => <div className="text-black">Loading...</div>,
     }
   ),
+  directions: dynamic(
+    () => import("@/src/components/common/Institutes/Polytech/Directions"),
+    {
+      ssr: true,
+      loading: () => <div className="text-black">Loading...</div>,
+    }
+  ),
   // corps: dynamic(() => import("@/src/components/common/Contacts/Corps"), {
   //   ssr: true,
   // }),
