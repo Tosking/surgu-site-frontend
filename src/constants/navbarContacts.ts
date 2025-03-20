@@ -11,7 +11,6 @@ export const SECTIONS: Section[] = [
   {
     href: "corps",
     name: "Kopnyca",
-    component: null, // или импортируйте соответствующий компонент
   },
   {
     href: "phonedirectory",

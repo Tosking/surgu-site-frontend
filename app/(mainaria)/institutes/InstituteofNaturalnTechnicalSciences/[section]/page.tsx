@@ -19,9 +19,6 @@ const DynamicComponents = {
       loading: () => <div className="text-black">Loading...</div>,
     }
   ),
-  // corps: dynamic(() => import("@/src/components/common/Contacts/Corps"), {
-  //   ssr: true,
-  // }),
 };
 
 export default async function SectionPage({
@@ -37,7 +34,7 @@ export default async function SectionPage({
       <Container>
         <div className="flex flex-col gap-[65px]">
           <NavbarSections
-            href="/institutes/polytechnic"
+            href="/institutes/InstituteofNaturalnTechnicalSciences"
             activeSection={section}
             sections={SECTIONS}
           />

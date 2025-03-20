@@ -37,7 +37,7 @@ export default async function SectionPage({
       <Container>
         <div className="flex flex-col gap-[65px]">
           <NavbarSections
-            href="/institutes/polytechnic"
+            href="/institutes/InstituteofEconomicsnManagement"
             activeSection={section}
             sections={SECTIONS}
           />
