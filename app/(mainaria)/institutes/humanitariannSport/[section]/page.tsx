@@ -19,9 +19,6 @@ const DynamicComponents = {
       loading: () => <div className="text-black">Loading...</div>,
     }
   ),
-  // corps: dynamic(() => import("@/src/components/common/Contacts/Corps"), {
-  //   ssr: true,
-  // }),
 };
 
 export default async function SectionPage({
