@@ -79,7 +79,7 @@ const Header = () => {
                 <li>
                   <Link
                     className="hover:text-sur-primary-blue ease-out duration-300"
-                    href={"/abiturient"}
+                    href={"/about"}
                   >
                     Об университете
                   </Link>
@@ -87,7 +87,7 @@ const Header = () => {
                 <li>
                   <Link
                     className="hover:text-sur-primary-blue ease-out duration-300"
-                    href={"/student"}
+                    href={"/science"}
                   >
                     Наука
                   </Link>
@@ -95,7 +95,7 @@ const Header = () => {
                 <li>
                   <Link
                     className="hover:text-sur-primary-blue ease-out duration-300"
-                    href={"/employee"}
+                    href={"/education"}
                   >
                     Образование
                   </Link>
@@ -103,7 +103,15 @@ const Header = () => {
                 <li>
                   <Link
                     className="hover:text-sur-primary-blue ease-out duration-300"
-                    href={"/employee"}
+                    href={"/institutes"}
+                  >
+                    Институты
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="hover:text-sur-primary-blue ease-out duration-300"
+                    href={"/payment"}
                   >
                     Оплата услуг
                   </Link>

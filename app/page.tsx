@@ -8,98 +8,113 @@ import Rutube from "@/public/Rutube.svg";
 import Image from "next/image";
 import Section from "@/src/components/semantic/Section";
 import Header from "@/src/components/common/Header/Header";
+import Button from "@/src/components/ui/Button/Button";
+import Template from "@/src/assets/template.jpg";
+import NewsCard from "@/src/components/common/News/NewsCard";
+import NewsCardTitle from "@/src/components/common/News/NewsCardTitle";
+import NewsCardBody from "@/src/components/common/News/NewsCardBody";
+import Marquee from "react-fast-marquee";
+import Carousel from "@/src/components/common/Carousel";
 export default function Home() {
   return (
     <div className="flex flex-col w-full justify-center items-center ">
       <Header />
-      <main className="w-full bg-sur-sections-dark ">
-        <section className="w-full py-[60px] ">
+      <main className="w-full">
+        <Section className="py-[80px]">
           <Container>
-            <div className="flex flex-col ">
-              <HeaderSection color="white" title="Онлайн-сервисы" />
-              <div className="flex flex-col gap-[10px] mx-0     mt-[98px]">
-                <div className="flex flex-col sm:flex-row items-center justify-center  gap-[10px]  ">
-                  <div className="flex flex-1 flex-shrink-0 max-w-[242px]  relative text-center flex-col justify-center rounded-[20px] items-center border border-white p-[15px] gap-[15px] min-h-[184px]">
-                    <span className="text-white font-bold text-[22px] ">
-                      АИС студент
-                    </span>
-                    <p className="text-center">
-                      Платформа для продвижения проектов
+            <div className="flex flex-col text-sur-footer-dark">
+              <div className="flex mb-[48px]">
+                <div className="flex flex-1 flex-col gap-[8px]">
+                  <h2 className="text-[48px] font-bold italic">Новости</h2>
+                  <div className="flex items-center gap-[5px]">
+                    <div className="w-[16px] h-[16px] aspect-[1/1] bg-[#15D315] rounded-lg"></div>
+                    <p>
+                      Важные события и достижения в учебной, научной и
+                      культурной жизни университета.
                     </p>
-                    <Link
-                      href={"https://student.surgu.ru/"}
-                      className="absolute w-full h-full inset-0 opacity-0 hover:opacity-100 flex justify-center items-center hover:transition-opacity duration-300 ease-in cursor-pointer hover:bg-white hover:rounded-[20px] text-black"
-                    >
-                      Перейти
-                    </Link>
-                  </div>
-                  <div className=" flex flex-1 flex-shrink-0 max-w-[242px]  relative text-center flex-col justify-center rounded-[20px] items-center border border-white p-[15px] gap-[15px] min-h-[184px]">
-                    <span className="text-white font-bold text-[22px] ">
-                      Электронная библиотека
-                    </span>
-                    <p className="text-center">
-                      Доступ к учебной и научной литературе
-                    </p>
-                    <Link
-                      href={"https://elib.surgu.ru/"}
-                      className="absolute w-full h-full inset-0 opacity-0 hover:opacity-100 flex justify-center items-center hover:transition-opacity duration-300 ease-in cursor-pointer hover:bg-white hover:rounded-[20px] text-black"
-                    >
-                      Перейти
-                    </Link>
-                  </div>
-                  <div className=" flex  flex-1 flex-shrink-0 max-w-[242px] relative text-center flex-col justify-center rounded-[20px] items-center border border-white p-[15px] gap-[15px] min-h-[184px]">
-                    <span className="text-white font-bold text-[22px] ">
-                      Абитуриент СурГУ
-                    </span>
-                    <p className="text-center">Платформа для поступающих</p>
-                    <Link
-                      href={"https://go.surgu.ru/"}
-                      className="absolute w-full h-full inset-0 opacity-0 hover:opacity-100 flex justify-center items-center hover:transition-opacity duration-300 ease-in cursor-pointer hover:bg-white hover:rounded-[20px] text-black"
-                    >
-                      Перейти
-                    </Link>
                   </div>
                 </div>
-                <div className="flex justify-center items-center flex-col sm:flex-row gap-[10px]">
-                  <div className=" flex max-w-[242px]  relative text-center flex-col justify-center rounded-[20px] items-center border border-white p-[15px] gap-[15px] min-h-[184px]">
-                    <span className="text-white font-bold text-[22px] ">
-                      Абитуриент СурГУ
-                    </span>
-                    <p className="text-center">Платформа для поступающих</p>
-                    <Link
-                      href={"https://go.surgu.ru/"}
-                      className="absolute w-full h-full inset-0 opacity-0 hover:opacity-100 flex justify-center items-center hover:transition-opacity duration-300 ease-in cursor-pointer hover:bg-white hover:rounded-[20px] text-black"
-                    >
-                      Перейти
-                    </Link>
-                  </div>
-                  <div className=" flex max-w-[242px]  relative text-center flex-col justify-center rounded-[20px] items-center border border-white p-[15px] gap-[15px] min-h-[184px]">
-                    <span className="text-white font-bold text-[22px] ">
-                      АРГО
-                    </span>
-                    <p className="text-center">
-                      Центр дополнительного образования детей
-                    </p>
-                    <Link
-                      href={"https://go.surgu.ru/"}
-                      className="absolute w-full h-full inset-0 opacity-0 hover:opacity-100 flex justify-center items-center hover:transition-opacity duration-300 ease-in cursor-pointer hover:bg-white hover:rounded-[20px] text-black"
-                    >
-                      Перейти
-                    </Link>
-                  </div>
+                <div className="flex flex-1 items-end justify-end">
+                  <Button className=" italic border border-sur-footer-dark rounded-[40px] py-[5px] px-[15px] text-[16px] ">
+                    Смотреть все новости
+                  </Button>
                 </div>
+              </div>
+
+              <div className="flex  flex-wrap gap-[16px] p-[16px] border border-black rounded-[20px]">
+                <NewsCard>
+                  <NewsCardTitle type="Сотрудникам" date="03.02.2025" />
+                  <NewsCardBody img={Template} title="День родного языка" />
+                </NewsCard>
+                <NewsCard>
+                  <NewsCardTitle type="Сотрудникам" date="03.02.2025" />
+                  <NewsCardBody img={Template} title="День родного языка" />
+                </NewsCard>
+                <NewsCard>
+                  <NewsCardTitle type="Сотрудникам" date="03.02.2025" />
+                  <NewsCardBody img={Template} title="День родного языка" />
+                </NewsCard>
               </div>
             </div>
           </Container>
-        </section>
+        </Section>
+
+        <Section className="flex flex-col">
+          <Marquee>
+            <header className="flex italic">
+              <h2 className="text-[72px] font-bold text-[#292A2D]">
+                СКОРО В СУРГУ
+              </h2>
+              <h2 className="text-[72px] font-bold text-[#292A2D]">
+                СКОРО В СУРГУ
+              </h2>
+              <h2 className="text-[72px] font-bold text-[#292A2D]">
+                СКОРО В СУРГУ
+              </h2>
+              <h2 className="text-[72px] font-bold text-[#292A2D]">
+                СКОРО В СУРГУ
+              </h2>
+              <h2 className="text-[72px] font-bold text-[#292A2D]">
+                СКОРО В СУРГУ
+              </h2>
+            </header>
+          </Marquee>
+          <Container>
+            <div className="flex text-[#423F3F] gap-[55px] flex-col lg:flex-row">
+              <div className="flex flex-col items-start flex-[1] basis-0 lg:basis-[426px] shrink-0">
+                <div className="flex items-start gap-[5px] ">
+                  <div className="w-[16px] h-[16px] mt-[4px] aspect-[1/1] bg-[#15D315] rounded-lg"></div>
+                  <p>
+                    Сургутский государственный университет — это яркая
+                    культурная жизнь и разнообразие событий: мастер-классы,
+                    выставки, концерты и спорт.
+                  </p>
+                </div>
+                <Button className="mt-[30px] border border-sur-footer-dark rounded-[40px] py-[5px] px-[15px] text-[16px]">
+                  Смотреть все анонсы мероприятий
+                </Button>
+              </div>
+
+              <div className="overflow-hidden ">
+                <Carousel />
+              </div>
+            </div>
+          </Container>
+        </Section>
       </main>
       <Footer className="w-full bg-sur-footer-dark pt-[72px]">
         <Section className="flex flex-col gap-[122px] contact-section pb-[95px]">
           <Container>
             <div className="top flex gap-[15px] justify-end ">
-              <Image width={35} height={35} src={Vkontakte} alt="#" />
-              <Image width={35} height={35} src={Telegram} alt="#" />
-              <Image width={35} height={35} src={Rutube} alt="#" />
+              <Link href={"https://vk.com/surgu"}>
+                <Image width={35} height={35} src={Vkontakte} alt="#" />
+              </Link>
+              <Link href={"https://t.me/surgu_university"}>
+                <Image width={35} height={35} src={Telegram} alt="#" />
+              </Link>
+              <Link href={"https://rutube.ru/channel/25613617/"}>
+                <Image width={35} height={35} src={Rutube} alt="#" />
+              </Link>
             </div>
           </Container>
           <Container>

@@ -12,6 +12,9 @@ export default {
       center: true,
     },
     extend: {
+      transitionProperty: {
+        transform: "transform",
+      },
       colors: {
         // Основные цвета
         background: "var(--background)",

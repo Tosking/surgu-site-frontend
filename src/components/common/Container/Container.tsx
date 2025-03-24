@@ -9,7 +9,7 @@ const Container: React.FC<{ children: React.ReactNode }> = ({
   className?: string;
 }) => {
   return (
-    <div className={cn("container mx-auto px-[16px] ", className)}>
+    <div className={cn("container mx-auto px-[16px] z-10 ", className)}>
       {children}
     </div>
   );
