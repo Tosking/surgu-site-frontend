@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import PaymentQr from "@/public/payment_qr.png";
 import PdfIcon from "@/public/pdf_icon.svg";
 import QRCode from "react-qr-code";
 
