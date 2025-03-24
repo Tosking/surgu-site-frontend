@@ -1,4 +1,7 @@
+import Container from "@/src/components/common/Container/Container";
+import NavbarSections from "@/src/components/features/NavbarInstitutes/NavbarSections";
 import Section from "@/src/components/semantic/Section";
+import { SECTIONS } from "@/src/constants/navbarPayments";
 export default function PaymentLayout({
   children,
 }: {
@@ -11,7 +14,14 @@ export default function PaymentLayout({
           Оплата услуг
         </h1>
       </Section>
-      {children}
+      <Section className="mt-[50px] mb-[50px] text-black">
+        <Container>
+          <div className="flex flex-col gap-[40px]">
+            <NavbarSections href="/payments" sections={SECTIONS} />
+            {children}
+          </div>
+        </Container>
+      </Section>
     </main>
   );
 }
