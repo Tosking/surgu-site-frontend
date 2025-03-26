@@ -13,7 +13,7 @@ export const SECTIONS: Section[] = [
     name: "Kopnyca",
   },
   {
-    href: "phonedirectory",
+    href: "phone-directory",
     name: "Телефонный справочник СурГУ",
   },
 ];

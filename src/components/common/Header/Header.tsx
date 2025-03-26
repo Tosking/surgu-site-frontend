@@ -15,7 +15,9 @@ const Header = () => {
     <SemanticHeader className="w-full bg-white">
       <Container>
         <div className="flex items-center justify-between ">
-          <Image src={Logo} alt="logo" />
+          <Link href={"/"}>
+            <Image src={Logo} alt="logo" />
+          </Link>
           <div className="flex flex-col flex-1 justify-center items-end">
             <Nav className="text-black py-[16px]">
               <ul className="flex items-center gap-[50px]">

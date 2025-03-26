@@ -145,6 +145,7 @@ body {
   transform: translateY(20px);
   animation: fadeIn 0.2s ease-out forwards;
 }
+
 .not-found {
   background: url("../public/notfound-bg.png");
 }

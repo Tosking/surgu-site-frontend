@@ -17,14 +17,7 @@ export default function ScienceLayout({ children }) {
           </div>
         </Container>
       </Section>
-      <Section className="mt-[50px] mb-[50px] text-black">
-        <Container>
-          <div className="flex flex-col gap-[40px]">
-            <NavbarSections href="/science" sections={SECTIONS} />
-            {children}
-          </div>
-        </Container>
-      </Section>
+      {children}
     </main>
   );
 }
